@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FinPRO - Financial Tracker</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="app-container">
     <!-- Header -->
     <header class="app-header">
       <div class="header-content">
         <div class="logo-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
             <line x1="12" y1="1" x2="12" y2="23"></line>
             <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
           </svg>
         </div>
         <div>
-          <h1>Financial Tracker</h1>
+          <h1>FinPRO</h1>
           <p class="subtitle">Track your income and expenses easily</p>
         </div>
       </div>
@@ -34,7 +37,8 @@
       <div class="summary-card income-card">
         <div class="card-icon-title">
           <span class="icon income-icon" aria-hidden="true">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
               <line x1="12" y1="19" x2="12" y2="5"></line>
               <polyline points="5 12 12 5 19 12"></polyline>
             </svg>
@@ -47,7 +51,8 @@
       <div class="summary-card expense-card">
         <div class="card-icon-title">
           <span class="icon expense-icon" aria-hidden="true">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
               <line x1="12" y1="5" x2="12" y2="19"></line>
               <polyline points="19 12 12 19 5 12"></polyline>
             </svg>
@@ -72,15 +77,8 @@
 
         <div class="form-group">
           <label for="item-input">Item Description</label>
-          <input 
-            type="text" 
-            id="item-input" 
-            name="item" 
-            placeholder="e.g. Salary, Groceries, Coffee" 
-            autocomplete="off"
-            required
-            maxlength="80"
-          >
+          <input type="text" id="item-input" name="item" placeholder="e.g. Salary, Groceries, Coffee" autocomplete="off"
+            required maxlength="80">
           <span class="field-error" id="item-error"></span>
         </div>
 
@@ -89,15 +87,7 @@
             <label for="amount-input">Amount ($)</label>
             <div class="amount-input-wrapper">
               <span class="currency-symbol">$</span>
-              <input 
-                type="number" 
-                id="amount-input" 
-                name="amount" 
-                placeholder="0.00" 
-                step="0.01" 
-                min="0.01" 
-                required
-              >
+              <input type="number" id="amount-input" name="amount" placeholder="0.00" step="0.01" min="0.01" required>
             </div>
             <span class="field-error" id="amount-error"></span>
           </div>
@@ -108,7 +98,8 @@
               <label class="type-option incoming-option">
                 <input type="radio" name="type" value="incoming" id="type-incoming" checked>
                 <span class="type-pill">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
                     <line x1="12" y1="19" x2="12" y2="5"></line>
                     <polyline points="5 12 12 5 19 12"></polyline>
                   </svg>
@@ -119,7 +110,8 @@
               <label class="type-option outgoing-option">
                 <input type="radio" name="type" value="outgoing" id="type-outgoing">
                 <span class="type-pill">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
                     <line x1="12" y1="5" x2="12" y2="19"></line>
                     <polyline points="19 12 12 19 5 12"></polyline>
                   </svg>
@@ -132,7 +124,8 @@
 
         <button type="submit" id="submit-btn" class="btn btn-primary">
           <span id="submit-btn-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
               <line x1="12" y1="5" x2="12" y2="19"></line>
               <line x1="5" y1="12" x2="19" y2="12"></line>
             </svg>
@@ -152,26 +145,25 @@
       <!-- Search & Filters -->
       <div class="search-filter-bar">
         <div class="search-box">
-          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="11" cy="11" r="8"></circle>
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
-          <input 
-            type="text" 
-            id="search-input" 
-            placeholder="Search description or amount..." 
-            autocomplete="off"
-            aria-label="Search transactions"
-          >
-          <button type="button" id="clear-search-btn" class="clear-btn" aria-label="Clear search" style="display: none;">
+          <input type="text" id="search-input" placeholder="Search description or amount..." autocomplete="off"
+            aria-label="Search transactions">
+          <button type="button" id="clear-search-btn" class="clear-btn" aria-label="Clear search"
+            style="display: none;">
             &times;
           </button>
         </div>
 
         <div class="filter-tabs" role="tablist" aria-label="Filter transactions">
           <button type="button" class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All</button>
-          <button type="button" class="filter-tab" data-filter="incoming" role="tab" aria-selected="false">Incoming</button>
-          <button type="button" class="filter-tab" data-filter="outgoing" role="tab" aria-selected="false">Outgoing</button>
+          <button type="button" class="filter-tab" data-filter="incoming" role="tab"
+            aria-selected="false">Incoming</button>
+          <button type="button" class="filter-tab" data-filter="outgoing" role="tab"
+            aria-selected="false">Outgoing</button>
         </div>
       </div>
 
@@ -181,23 +173,27 @@
       <!-- Friendly Empty State -->
       <div id="empty-state" class="empty-state" style="display: none;">
         <div class="empty-state-icon" aria-hidden="true">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
             <rect x="2" y="4" width="20" height="16" rx="3"></rect>
             <path d="M7 15h0M2 9.5h20"></path>
           </svg>
         </div>
         <h3 id="empty-state-title">No transactions yet</h3>
-        <p id="empty-state-text">Your financial list is clean and fresh. Add your first incoming or outgoing transaction above to get started!</p>
+        <p id="empty-state-text">Your financial list is clean and fresh. Add your first incoming or outgoing transaction
+          above to get started!</p>
       </div>
     </section>
   </div>
 
   <!-- Delete Confirmation Modal -->
-  <div id="confirm-modal" class="modal-backdrop" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="confirm-modal-title">
+  <div id="confirm-modal" class="modal-backdrop" style="display: none;" role="dialog" aria-modal="true"
+    aria-labelledby="confirm-modal-title">
     <div class="modal-card">
       <div class="modal-header">
         <div class="modal-warning-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="10"></circle>
             <line x1="12" y1="8" x2="12" y2="12"></line>
             <line x1="12" y1="16" x2="12.01" y2="16"></line>
@@ -215,5 +211,5 @@
 
   <script src="script.js"></script>
 </body>
-</html>
 
+</html>
